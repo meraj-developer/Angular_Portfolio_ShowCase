@@ -34,5 +34,6 @@ core     =======	Services, Models, Guards, Interceptors (app-wide logic)
 shared   =======    Reusable components, pipes, directives, Angular Material module
 features =======    Each section (Hero, About, Skills, Projects, Contact) gets its own module/component
 assets   =======    Images, icons, JSON data, styles
+& good
 
 -->
