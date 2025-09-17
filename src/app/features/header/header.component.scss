@@ -1,0 +1,44 @@
+/* Navbar overall look */
+.custom-navbar {
+  background: linear-gradient(90deg, #0d6efd, #6610f2);
+  padding: 0.8rem 1rem;
+}
+
+/* Brand/Logo styling */
+.navbar-brand {
+  color: #fff !important;
+  font-size: clamp(1.2rem, 2vw, 1.5rem); /* responsive size */
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+/* Nav links */
+.nav-link {
+  color: #f8f9fa !important;
+  margin-right: 20px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #ffc107 !important;  /* yellow hover */
+  transform: scale(1.1);      /* zoom effect */
+}
+
+/* Active link highlight */
+.nav-link.active {
+  border-bottom: 2px solid #ffc107;
+}
+
+/* Responsive fixes - Mobile/Tablet */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background: linear-gradient(90deg, #0d6efd, #6610f2); /* same bg */
+    padding: 1rem;
+  }
+
+  .nav-link {
+    margin: 0.5rem 0;       /* spacing between links */
+    text-align: center;     /* center align links */
+    display: block;         /* full-width clickable */
+  }
+}
