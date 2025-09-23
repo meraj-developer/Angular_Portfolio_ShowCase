@@ -8,6 +8,7 @@ import { Component, Input } from '@angular/core';
 export class HeroComponent {
 
   @Input() NameTitle!:string;
+  // protected socialLinks:string=''
 
   downloadResume()
   {
@@ -16,5 +17,15 @@ export class HeroComponent {
     link.download = 'MerajResume.pdf'
     link.click()
   }
+
+  protected socialLinks = 
+  [
+    {link:'https://www.linkedin.com/in/md-meraj-75a97520a/',icon:'bi bi-linkedin me-5 text-white'},
+    {link:'https://github.com/meraj-developer',icon:'bi bi-git me-5 text-white'},
+    {link:'https://github.com/meraj-developer',icon:'bi bi-git me-5 text-white'},
+    {link:'https://x.com/',icon:'bi bi-twitter text-white'}
+  ]
+
+
 
 }
