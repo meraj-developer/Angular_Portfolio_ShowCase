@@ -2,3 +2,70 @@
 {
     background: linear-gradient(90deg, #0d6efd, #6610f2);
 }
+
+.hero-section 
+{ 
+    background: linear-gradient(270deg, #6a11cb, #2575fc, #ff7e5f, #4dd0fc); 
+    background-size: 800% 800%; 
+    animation: gradientMove 20s ease infinite; 
+    padding: 4rem 2rem; 
+}
+
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero-section img
+{
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.hero-section
+{
+    font-size: clamp(0.5rem, 4vw , 1rem);
+    letter-spacing: 1px;
+}
+
+.hero-section button:hover
+{
+    // transform-style: (1.05);
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+    background-color: #ff7e5f;
+    transition: all 0.3 ease;
+}
+
+@media (max-width:768px)
+{
+    .row
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    img
+    {
+        margin-top: 2rem;
+    }
+
+    .text
+    {
+        order: 1;
+    }
+
+    .cta-btn
+    {
+        margin-top: 1.5rem;
+    }
+
+}
+
+
+
+
