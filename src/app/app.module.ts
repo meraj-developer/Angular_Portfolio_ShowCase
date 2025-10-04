@@ -11,12 +11,14 @@ import { MatButtonModule } from '@angular/material/button';
 import { HeroComponent } from './features/hero/hero.component';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { AboutComponent } from './features/about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HeroComponent
+    HeroComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

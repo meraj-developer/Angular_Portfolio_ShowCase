@@ -1,58 +1,58 @@
-<div class="d-flex justify-content-center align-items-center">
+<div class="card p-3 my-3">
+  <div class="card-body">
+    <div class="d-flex justify-content-center align-items-center">
   <div class="row align-items-center">
     <div
       class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center text-center"
     >
-      <h1>
-        Frontend Developer passionate about creating modern, responsive, and
+      <h1>About Me</h1>
+      <h3 class="text-white">
+        I Am A Frontend Developer And passionate about creating modern, responsive, and
         interactive web applications. Skilled in Angular, CSS animations, and
         gradient-driven designs to deliver polished, recruiter-friendly
         interfaces that work seamlessly across all devices.
-      </h1>
-
-      <!-- <h3>
-        Angular , Javascript , Typescript , Bootstrap , Angular Material , HTML5
-        , CSS3
-    </h3> -->
-
-    <h3>{{skillsName}}</h3>
-
-    </div>
-
-    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-      <img [src]="imgUrl" alt="" class="img-fluid" />
-    </div>
-
-        <button type="button" class="btn btn-secondary">Show More</button>
-    <button type="button" class="btn btn-secondary mt-2">Hide</button>
+      </h3>
 
 
-  </div>
-</div>
-
-
-
-
-
-
-<p>
-  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-    Show More
-  </a>
-</p>
-<div class="collapse" id="collapseExample">
-  <div class="card card-body">
-    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-  </div>
-</div>
-
-    <p>
-      <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-        Show More
-      </a>
-    </p>
-    <div class="collapse" id="collapseExample">
-      <div class="card card-body">
-        Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+      <div class="d-flex flex-wrap gap-6 fs-4 text-white">
+      <span>{{ skillsName }}</span>
       </div>
+      
     </div>
+
+    <div
+      class="col-12 col-md-6 d-flex justify-content-center align-items-center"
+    >
+      <img [src]="imgUrl" alt="" class="img-fluid shadow rounded" />
+    </div>
+
+  <!-- toggle functionalities -->
+  <p>
+    <a
+      class="btn btn-secondary"
+      data-bs-toggle="collapse"
+      href="#collapseExample"
+      role="button"
+      aria-expanded="false"
+      aria-controls="collapseExample"
+    >
+      Show More
+    </a>
+  </p>
+  <div class="collapse" id="collapseExample">
+    <div class="card card-body">
+      I am a passionate Frontend Developer with 2+ Years of experience in
+      building modern, responsive, and user-friendly web applications. Skilled
+      in Angular, HTML5, CSS3, JavaScript, Typescript, Angular-Material and
+      Bootstrap, I focus on creating clean and interactive UI/UX designs. I
+      enjoy transforming complex requirements into seamless digital experiences
+      and continuously improving my skills with the latest frontend
+      technologies.
+    </div>
+  </div>
+
+  </div>
+</div>
+  </div>
+</div>
+

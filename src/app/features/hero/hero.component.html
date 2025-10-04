@@ -1,7 +1,9 @@
-<div class="d-flex align-items-center justify-content-between container hero-section mt-0.5">
+<div
+  class="d-flex align-items-center justify-content-between container hero-section mt-0.5"
+>
   <div class="row">
     <div class="col-12 col-md-6 text-white text-center mt-5 shadow">
-      <h1>{{NameTitle}}</h1>
+      <h1>{{ NameTitle }}</h1>
       <h3>FrontEnd Developer</h3>
       <p>
         I worked as a Frontend Developer at Trangile Services Private Limited.
@@ -10,13 +12,23 @@
         collaborated with the backend team for API integration and focused on
         writing clean, maintainable code.
       </p>
-      <button type="button" class="btn btn-dark me-4 shadow" (click)="downloadResume()">Download CV</button>
+      <button
+        type="button"
+        class="btn btn-dark me-4 shadow"
+        (click)="downloadResume()"
+      >
+        Download CV
+      </button>
       <button type="button" class="btn btn-dark shadow">Contact Me</button>
 
       <div class="mt-2 fs-5">
-      <a *ngFor="let item of socialLinks" href="{{item.link}}" target="_blank">
-        <i [class]="item.icon"></i>
-      </a>
+        <a
+          *ngFor="let item of socialLinks"
+          href="{{ item.link }}"
+          target="_blank"
+        >
+          <i [class]="item.icon"></i>
+        </a>
       </div>
     </div>
 
@@ -28,4 +40,4 @@
     </div>
   </div>
 </div>
-<!-- <app-about [skillsName]="skills"></app-about> -->
+<app-about [skillsName]="skills"></app-about>
