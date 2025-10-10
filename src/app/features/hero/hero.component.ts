@@ -33,8 +33,7 @@ export class HeroComponent {
     'Typescript',
     'Bootstrap',
     'Angular Material',
-    'HTML5',
-    'CSS3'
+    'HTML5/CSS3',
   ]
 
 

@@ -1,0 +1,8 @@
+<h2>Project Lists</h2>
+<div *ngFor="let p of projects">
+    <h3>{{p.title}}</h3>
+    <h3>{{p.description}}</h3>
+    <p><strong>Tech:</strong>{{p.techstack.join(',')}}</p>
+    <a *ngIf="p.link" [href]="p.link">View Project</a>
+    <button (click)="showData()">Show</button>
+</div>
