@@ -1,8 +1,30 @@
-<h2>Project Lists</h2>
-<div *ngFor="let p of projects">
-    <h3>{{p.title}}</h3>
-    <h3>{{p.description}}</h3>
-    <p><strong>Tech:</strong>{{p.techstack.join(',')}}</p>
-    <a *ngIf="p.link" [href]="p.link">View Project</a>
-    <button (click)="showData()">Show</button>
+
+<div class="card bg-primary border-4 rounded">
+  <div class="card-body">
+    <h1 class="bg-primary text-white text-center fst-italic">Project Lists</h1>
+<div class="d-flex flex-wrap bg-primary" style="height: 45rem">
+  <div class="col-md-4" *ngFor="let p of projects">
+    <div class="card shadow bg-secondary text-white w-100" style="max-width:37rem">
+      <img class="card-img-top" [src]="p.img" alt="Card image cap" />
+      <div class="card-body">
+        <h5 class="card-title">{{ p.title }}</h5>
+        <p class="card-text">
+          {{ p.description }}
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    class="d-flex container justify-content-center align-items-center text-center"
+  >
+    <button
+      class="bg-secondary rounded-pill shadow-xl border-0 text-white btn-fn"
+      style="height: 5rem; width: 15rem"
+      (click)="showData()"
+    >
+      Show Project
+    </button>
+  </div>
+</div>
+  </div>
 </div>

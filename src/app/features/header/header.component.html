@@ -1,8 +1,7 @@
-<nav
-  class="navbar navbar-expand-lg navbar-dark p-3 shadow rounded custom-navbar"
->
+<nav class="navbar navbar-expand-lg navbar-dark p-3 shadow rounded custom-navbar">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Meraj Portfolio</a>
+    <a class="navbar-brand" routerLink="/">Meraj Portfolio</a>
+
     <button
       class="navbar-toggler"
       type="button"
@@ -17,26 +16,20 @@
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <!-- links right side -->
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/about">About Me</a>
+          <a class="nav-link" routerLink="/about" routerLinkActive="active">About Me</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/projectlist">Project List</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" routerLink="/projectlist" routerLinkActive="active">Project List</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+
 
 <div class="container-fluid bg-primary">
   <!-- here i used parent to child -->

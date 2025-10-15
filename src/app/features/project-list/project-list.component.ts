@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProjectService } from '../../cors/project.service';
 import { IProject } from '../../models/project.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-project-list',
@@ -9,21 +10,18 @@ import { IProject } from '../../models/project.model';
 })
 export class ProjectListComponent implements OnInit {
 
-  projects:IProject[] = []
+  projects: IProject[] = []
 
-  constructor(private projectServiceData:ProjectService)
-  {
+  constructor(private projectServiceData: ProjectService, private _router: Router) {
 
   }
 
-  ngOnInit()
-  {
+  ngOnInit() {
     this.projects = this.projectServiceData.getProject()
   }
 
-  showData()
-  {
-    
+  showData() {
+    this._router.navigate(['/projects'])
   }
 
 }

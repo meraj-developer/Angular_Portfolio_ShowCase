@@ -12,13 +12,19 @@ import { HeroComponent } from './features/hero/hero.component';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { AboutComponent } from './features/about/about.component';
+import { ProjectListComponent } from './features/project-list/project-list.component';
+import { ProjectModalComponent } from './shared/project-modal/project-modal.component';
+import { ProjectsComponent } from './features/projects/projects.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HeroComponent,
-    AboutComponent
+    AboutComponent,
+    ProjectListComponent,
+    ProjectModalComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
