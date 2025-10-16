@@ -8,8 +8,16 @@ export interface IProject
     img:string
 }
 
-export interface ILaptopMobileData
+export interface ILaptopData
 {
     product:string;
     price:string;
+    image:string
+}
+
+export interface IMobileData
+{
+    product:string;
+    price:string;
+    image:string;
 }

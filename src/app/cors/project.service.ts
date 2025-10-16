@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ILaptopMobileData, IProject } from '../models/project.model';
+import { ILaptopData, IMobileData, IProject } from '../models/project.model';
 
 @Injectable({
   providedIn: 'root'
@@ -33,17 +33,62 @@ export class ProjectService {
     }
   ]
 
-  public laptopMobileData:ILaptopMobileData[] = 
+  public laptopData:ILaptopData[] = 
   [
     {
       product:'Dell Laptop',
-      price:'₹45,000'
+      price:'₹45,000',
+      image:'assets/laptop.jpg'
+    },
+        {
+      product:'Acer Laptop',
+      price:'₹40,000',
+      image:'assets/laptop2.jpg'
+    },
+        {
+      product:'HP Laptop',
+      price:'₹50,000',
+      image:'assets/laptop3.jpg'
+    },
+        {
+      product:'ASUS Laptop',
+      price:'₹60,000',
+      image:'assets/laptop4.jpg'
     }
   ]
 
-  getLaptopMobileData():ILaptopMobileData[]
+  public mobileData:IMobileData[] = 
+  [
+    {
+      product:'IPhone Mobile',
+      price:'₹70,000',
+      image:'assets/mobile2.jpg'
+    },
+    {
+      product:'Samsung Mobile',
+      price:'₹40,000',
+      image:'assets/mobile5.mp4'
+    },
+    {
+      product:'Realme Mobile',
+      price:'₹10,000',
+      image:'assets/mobile4.mp4'
+    },
+    {
+      product:'Motorolla Mobile',
+      price:'₹15,000',
+      image:'assets/mobile7.jpg'
+    }
+  ]
+
+  getMobileData():IMobileData[]
   {
-    return this.laptopMobileData
+    return this.mobileData
+  }
+
+  getLaptopData():ILaptopData[]
+  {
+    return this.laptopData
   }
 
   getProject():IProject[]

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ProjectService } from '../../cors/project.service';
-import { ILaptopMobileData } from '../../models/project.model';
+import { ILaptopData, IMobileData } from '../../models/project.model';
 
 @Component({
   selector: 'app-projects',
@@ -9,36 +9,29 @@ import { ILaptopMobileData } from '../../models/project.model';
 })
 export class ProjectsComponent {
 
-  protected storeProduct:ILaptopMobileData[] = []
+  protected storeProduct: ILaptopData[] = []
+  protected mobileProduct: IMobileData[] = []
 
-  constructor(private productData:ProjectService)
-  {
+  constructor(private productData: ProjectService) { }
 
+  ngOnInit() {
+    this.storeProduct = this.productData.getLaptopData()
+    this.mobileProduct = this.productData.getMobileData()
   }
 
-  ngOnInit()
-  {
-    this.storeProduct = this.productData.getLaptopMobileData()
-  }
+  protected count: number = 1
 
-  protected projectName:string="Laptop"
+  protected showCart: boolean = false
 
-  protected count:number=1
-
-  protected showCart:boolean = false
-
-  protected IncrementItem()
-  {
+  protected IncrementItem() {
     this.count++;
   }
 
-  protected decrementItem()
-  {
+  protected decrementItem() {
     this.count--;
   }
 
-  protected addToCartProduct()
-  {
+  protected addToCartProduct() {
     this.showCart = true
   }
 
